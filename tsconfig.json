@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",                       // Better async/await support
+    "module": "commonjs",                     // Required for Node.js
+    "rootDir": "./src",                       // Source folder
+    "outDir": "./dist",                       // Compiled output
+    "strict": true,                           // Enables all strict type checks
+    "esModuleInterop": true,                  // Allow import/export compatibility
+    "resolveJsonModule": true,                // Allow JSON imports
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing on imports
+    "skipLibCheck": true                      // Faster builds by skipping lib checks
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts", "dist"]
+}
